@@ -81,7 +81,7 @@
 ### 克隆项目
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/LaL1ame/XingTu
 cd XingTu
 ```
 
@@ -430,7 +430,7 @@ dependencies {
 
 如有问题或建议，请通过以下方式联系：
 
-- 提交 Issue：[GitHub Issues](https://github.com/your-repo/issues)
+- 提交 Issue：[GitHub Issues](https://github.com/LaL1ame/XingTu/issues)
 - 邮箱：3373661337@qq.com
 
 ---
