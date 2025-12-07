@@ -370,7 +370,7 @@ dependencies {
 
 ### 首页模块
 
-<img src="../../../md笔记/TyporaImages/image-20251207152252843.png" alt="image-20251207152252843" style="zoom:25%;" />
+<img src="img/1.jpg" style="zoom:25%;" />
 
 ---
 
