@@ -370,7 +370,7 @@ dependencies {
 
 ### 首页模块
 
-<img src="img/1.jpg" style="zoom:25%;" />
+<img src="img/1.jpg" style="zoom:10%;" />
 
 ---
 
