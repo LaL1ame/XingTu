@@ -392,7 +392,7 @@ dependencies {
 
 ### 导出功能模块
 
-<img src="../../../md笔记/TyporaImages/image-20251207152454618.png" alt="image-20251207152454618" style="zoom:25%;" /><img src="../../../md笔记/TyporaImages/image-20251207152621660.png" alt="image-20251207152621660" style="zoom:25%;" />
+<img src="img/9.jpg" alt="img-9" style="zoom:25%;" width="300px"/><img src="img/10.png" alt="img-10" style="zoom:25%;" width="300px"/>
 
 
 
