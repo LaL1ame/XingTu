@@ -2,6 +2,7 @@
 
 <div align="center">
 
+
 ![Android](https://img.shields.io/badge/Android-7.0%2B-green.svg)
 ![Kotlin](https://img.shields.io/badge/Kotlin-1.9-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
@@ -21,10 +22,10 @@
 ### 核心特性
 
 - **高性能渲染**：使用 OpenGL ES 2.0 实现图片渲染，流畅度高
-- 多媒体支持**：支持图片和视频混合展示，视频可点击播放
-- 智能权限管理**：适配 Android 13+ 新权限模型，兼容不同厂商设备
+- **多媒体支持**：支持图片和视频混合展示，视频可点击播放
+- **智能权限管理**：适配 Android 13+ 新权限模型，兼容不同厂商设备
 - **优化性能**：使用 MediaStore Thumbnails API 加载缩略图，相册浏览流畅
--  **用户体验**：支持撤销/重做功能，操作历史可追溯
+- **用户体验**：支持撤销/重做功能，操作历史可追溯
 
 ### 使用场景
 
@@ -67,7 +68,7 @@
 
 ---
 
-## 🚀 快速开始
+# 快速开始
 
 ### 环境要求
 
@@ -101,44 +102,6 @@ cd XingTu
    - 确保已安装 Android SDK API 24-36
    - 确保已配置 JDK 11 或更高版本
    - 检查 `local.properties` 文件中的 `sdk.dir` 路径是否正确
-
-### 构建项目
-
-#### Debug 版本
-
-```bash
-# Windows
-gradlew.bat assembleDebug
-
-# macOS / Linux
-./gradlew assembleDebug
-```
-
-构建产物位置：`app/build/outputs/apk/debug/app-debug.apk`
-
-#### Release 版本
-
-```bash
-# Windows
-gradlew.bat assembleRelease
-
-# macOS / Linux
-./gradlew assembleRelease
-```
-
-构建产物位置：`app/build/outputs/apk/release/app-release.apk`
-
-#### 生成 AAB（Android App Bundle）
-
-```bash
-# Windows
-gradlew.bat bundleRelease
-
-# macOS / Linux
-./gradlew bundleRelease
-```
-
-构建产物位置：`app/build/outputs/bundle/release/app-release.aab`
 
 ### 安装运行
 
@@ -201,7 +164,7 @@ adb install -r app/build/outputs/apk/debug/app-debug.apk
 
 ---
 
-## 📁 项目结构
+## 项目结构
 
 ```
 XingTu/
@@ -244,79 +207,9 @@ XingTu/
 
 ---
 
-## 🛠 技术栈
-
-### 开发语言
-
-- **Kotlin**：主要编程语言
-
-### UI 框架
-
-- **Android 原生 UI 控件**：RecyclerView、ViewPager2、ImageView 等
-- **ViewBinding**：数据绑定
-
-### 图形渲染
-
-- **OpenGL ES 2.0**：图片渲染和变换
-
-### 异步处理
-
-- **Kotlin 协程**：异步任务处理（网络请求、文件 IO、媒体库查询）
-
-### 媒体处理
-
-- **ExoPlayer (Media3)**：视频播放
-- **MediaStore API**：媒体库访问
-
-### 架构模式
-
-- **模块化设计**：首页、相册页、编辑器页独立模块
-- **MVVM**：部分模块采用 MVVM 模式
-
 ---
 
-## 📋 功能列表
-
-### 首页模块
-
-- [x] 顶部轮播图自动播放（ViewPager2）
-- [x] 横向滑动媒体展示（RecyclerView）
-- [x] MP4 视频播放（ExoPlayer）
-- [x] 图片预览（JPEG、PNG、WebP）
-- [x] 导入图片按钮
-- [x] 自动轮播控制
-- [x] 播放器管理（单例模式）
-
-### 相册页模块
-
-- [x] MediaStore API 异步查询
-- [x] 3 列网格布局
-- [x] 权限管理（Android 13+ 适配）
-- [x] 缩略图优化加载
-- [x] 点击跳转编辑器
-- [x] 厂商适配（小米、华为等）
-
-### 编辑器页模块
-
-- [x] OpenGL ES 2.0 渲染画布
-- [x] 双指缩放（0.1x - 5.0x）
-- [x] 单指平移
-- [x] 旋转功能（90 度）
-- [x] 等比例裁剪（1:1、3:4、9:16）
-- [x] 自由裁剪
-- [x] 撤销/重做功能
-- [x] 重置功能
-
-### 导出功能模块
-
-- [x] FBO 离屏渲染
-- [x] MediaStore API 保存到相册
-- [x] 权限处理（Android 13+ 适配）
-- [x] 文件命名（时间戳）
-
----
-
-## ⚙️ 配置说明
+## 配置说明
 
 ### 权限配置
 
@@ -370,35 +263,35 @@ dependencies {
 
 ### 首页模块
 
-<img src="img/1.jpg" style="zoom:25%;" width="300px" />
+<img src="img/1.jpg" style="zoom:25%;"  />
 
 ---
 
 ### 相册页模块
 
-<img src="img/2.jpg" style="zoom: 25%;" width="300px" />
+<img src="img/2.jpg" style="zoom: 25%;"  />
 
 ---
 
 ### 编辑器页模块
 
-<img src="img/3.jpg" alt="img-3" style="zoom:25%;" width="300px"/><img src="img/4.jpg" alt="img-4" style="zoom:25%;" width="300px"/><img src="img/5.jpg" alt="img-5" style="zoom:25%;" width="300px"/>
+<img src="img/3.jpg" alt="img-3" style="zoom:25%;" /><img src="img/4.jpg" alt="img-4" style="zoom:25%;" /><img src="img/5.jpg" alt="img-5" style="zoom:25%;" />
 
 ---
 
-<img src="img/6.jpg" alt="img-6" style="zoom:25%;" width="300px"/><img src="img/7.jpg" alt="img-7" style="zoom:25%;" width="300px"/><img src="img/8.jpg" alt="img-8" style="zoom:25%;" width="300px"/>
+<img src="img/6.jpg" alt="img-6" style="zoom:25%;" /><img src="img/7.jpg" alt="img-7" style="zoom:25%;" /><img src="img/8.jpg" alt="img-8" style="zoom:25%;" />
 
 ---
 
 ### 导出功能模块
 
-<img src="img/9.jpg" alt="img-9" style="zoom:25%;" width="300px"/><img src="img/10.png" alt="img-10" style="zoom:25%;" width="300px"/>
+<img src="img/9.jpg" alt="img-9" style="zoom:25%;" /><img src="img/10.png" alt="img-10" style="zoom:25%;" />
 
 
 
 ---
 
-## 📝 开发说明
+## 开发说明
 
 ### 代码规范
 
@@ -411,13 +304,6 @@ dependencies {
 - **Android Studio Debugger**：用于问题定位
 - **Android Studio Profiler**：用于定位内存泄漏、CPU 峰值和卡顿根源
 
-### 测试建议
-
-- 在不同 Android 版本上测试（Android 7.0-14）
-- 在不同品牌设备上测试（小米、华为、Oppo、Vivo 等）
-- 测试大图片的编辑和导出性能
-- 测试视频播放的流畅性和资源释
-
 ---
 
 本项目采用 MIT 许可证。详情请参阅 [LICENSE](LICENSE) 文件。
@@ -426,7 +312,7 @@ dependencies {
 
 ---
 
-## 📧 联系方式
+## 联系方式
 
 如有问题或建议，请通过以下方式联系：
 
@@ -436,6 +322,7 @@ dependencies {
 ---
 
 <div align="center">
+
 
 
 **醒图 (XingTu)** - 让图片编辑更简单
