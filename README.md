@@ -269,23 +269,23 @@ dependencies {
 
 ### 相册页模块
 
-<img src="img/2.jpg" style="zoom: 25%;"  />
+<img src="img/2.jpg" style="zoom: 25%;" width="300px" />
 
 ---
 
 ### 编辑器页模块
 
-<img src="img/3.jpg" alt="img-3" style="zoom:25%;" /><img src="img/4.jpg" alt="img-4" style="zoom:25%;" /><img src="img/5.jpg" alt="img-5" style="zoom:25%;" />
+<img src="img/3.jpg" alt="img-3" style="zoom:25%;" width="300px"/><img src="img/4.jpg" alt="img-4" style="zoom:25%;" width="300px"/><img src="img/5.jpg" alt="img-5" style="zoom:25%;" width="300px"/>
 
 ---
 
-<img src="img/6.jpg" alt="img-6" style="zoom:25%;" /><img src="img/7.jpg" alt="img-7" style="zoom:25%;" /><img src="img/8.jpg" alt="img-8" style="zoom:25%;" />
+<img src="img/6.jpg" alt="img-6" style="zoom:25%;" width="300px"/><img src="img/7.jpg" alt="img-7" style="zoom:25%;" width="300px"/><img src="img/8.jpg" alt="img-8" style="zoom:25%;" width="300px"/>
 
 ---
 
 ### 导出功能模块
 
-<img src="img/9.jpg" alt="img-9" style="zoom:25%;" /><img src="img/10.png" alt="img-10" style="zoom:25%;" />
+<img src="img/9.jpg" alt="img-9" style="zoom:25%;" width="300px"/><img src="img/10.png" alt="img-10" style="zoom:25%;" width="300px"/>
 
 
 
