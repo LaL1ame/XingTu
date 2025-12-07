@@ -370,19 +370,19 @@ dependencies {
 
 ### 首页模块
 
-<img src="img/1.jpg" style="zoom:10%;" />
+<img src="img/1.jpg" style="zoom:25%;" />
 
 ---
 
 ### 相册页模块
 
-<img src="../../../md笔记/TyporaImages/image-20251207152323389.png" alt="image-20251207152323389" style="zoom: 25%;" />
+<img src="img/2.jpg" style="zoom: 25%;" />
 
 ---
 
 ### 编辑器页模块
 
-<img src="../../../md笔记/TyporaImages/image-20251207152357197.png" alt="image-20251207152357197" style="zoom:25%;" /><img src="../../../md笔记/TyporaImages/image-20251207152405795.png" alt="image-20251207152405795" style="zoom:25%;" /><img src="../../../md笔记/TyporaImages/image-20251207152420641.png" alt="image-20251207152420641" style="zoom:25%;" />
+<img src="img/3.jpg" alt="img-3" style="zoom:25%;" /><img src="img/4.jpg" alt="img-4" style="zoom:25%;" /><img src="img/5.jpg" alt="img-5" style="zoom:25%;" />
 
 ---
 
