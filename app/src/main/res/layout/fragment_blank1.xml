@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".BlankFragment1">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_margin="10dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="导入图片"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/btnOpenAlbum"
+                app:backgroundTint="#000000"
+                app:cornerRadius="5dp"
+                app:icon="@android:drawable/ic_input_add"
+                app:iconSize="30dp"
+                app:iconGravity="textStart"
+                app:iconPadding="8dp" />
+
+            <Button
+                android:layout_margin="10dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="相机"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:id="@+id/xiangji"
+                app:backgroundTint="#8BC34A"
+                app:icon="@android:drawable/ic_menu_camera"
+                app:iconTint="#000000"
+                app:iconSize="30dp"
+                app:cornerRadius="5dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="为你推荐"
+            android:gravity="bottom"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/inspirationRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:clipToPadding="false"
+            android:nestedScrollingEnabled="true"
+
+            android:padding="8dp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

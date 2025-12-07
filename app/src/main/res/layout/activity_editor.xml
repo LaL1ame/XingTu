@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditorActivity">
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/glSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 裁剪框覆盖层 View -->
+    <com.bytedance.xingtu.CropOverlayView
+        android:id="@+id/cropOverlayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 裁剪比例选择栏 -->
+    <LinearLayout
+        android:id="@+id/cropRatioLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="#80000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnCropRatioFree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自由"
+            android:textSize="12sp"
+            android:minWidth="50dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btnCropRatio1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1:1"
+            android:textSize="12sp"
+            android:minWidth="50dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btnCropRatio3_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3:4"
+            android:textSize="12sp"
+            android:minWidth="50dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btnCropRatio9_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9:16"
+            android:textSize="12sp"
+            android:minWidth="50dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btnCropApply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="应用裁剪"
+            android:textSize="12sp"
+            android:minWidth="70dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btnCropCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textSize="12sp"
+            android:minWidth="50dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+    </LinearLayout>
+
+    <!-- 底部操作栏 - 使用 ScrollView 支持横向滚动 -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btnUndo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="撤销"
+                android:textSize="12sp"
+                android:minWidth="60dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginEnd="4dp"
+                app:cornerRadius="0dp"/>
+
+            <Button
+                android:id="@+id/btnRedo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重做"
+                android:textSize="12sp"
+                android:minWidth="60dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginEnd="4dp"
+                app:cornerRadius="0dp"/>
+
+            <Button
+                android:id="@+id/btnCrop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="裁剪"
+                android:textSize="12sp"
+                android:minWidth="60dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginEnd="4dp"
+                app:cornerRadius="0dp"/>
+
+            <Button
+                android:id="@+id/btnSelectImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择图片"
+                android:textSize="12sp"
+                android:minWidth="70dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginEnd="4dp"
+                app:cornerRadius="0dp"/>
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重置"
+                android:textSize="12sp"
+                android:minWidth="60dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginEnd="4dp"
+                app:cornerRadius="0dp"/>
+
+            <Button
+                android:id="@+id/btnRotate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="旋转90°"
+                android:textSize="12sp"
+                android:minWidth="70dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginEnd="4dp"
+                app:cornerRadius="0dp"/>
+
+            <Button
+                android:id="@+id/btnExport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="导出"
+                android:textSize="12sp"
+                android:minWidth="60dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginEnd="4dp"
+                app:cornerRadius="0dp"/>
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回"
+                android:textSize="12sp"
+                android:minWidth="60dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                app:cornerRadius="0dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

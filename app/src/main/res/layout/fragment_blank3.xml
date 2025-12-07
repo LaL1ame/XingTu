@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    tools:context=".BlankFragment3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/blankview"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/blankview"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/profile"/>
+
+        <TextView
+            android:layout_marginBottom="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户"
+            android:textSize="20dp"
+            android:layout_toEndOf="@+id/imageview"
+            android:layout_above="@+id/blankview"/>
+    </RelativeLayout>
+
+
+</FrameLayout>
